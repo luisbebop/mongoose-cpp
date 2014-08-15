@@ -46,10 +46,12 @@ for the method 'otb' and extend your code from there implementing another Orfeo 
 a plenty of examples you can find [here](http://sourceforge.net/projects/orfeo-toolbox/files/OTB/OTB-4.0/OTB-4.0.0.tgz/download)
 inside the folder 'Examples'. For example 'Examples/FeatureExtraction/ExtractRoadExample' that analyse a tif satellite image
 identifying the roads. You can find the sample data to run the example [here](http://www.orfeo-toolbox.org/packages/OTB-Data-Examples.tgz)
- 
+
 # License
 
 The mongoose binding (`mongoose/` folder) is under MIT license
 
 However, the original mongoose project license is different, have a look to the
 `LICENSE` file for more information.
+
+# <3
