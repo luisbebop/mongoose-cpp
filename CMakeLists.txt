@@ -2,11 +2,22 @@ cmake_minimum_required (VERSION 2.6)
 project (mongoose)
 find_package (Threads)
 
+find_package (OTB)
+if(OTB_FOUND)
+  include(${OTB_USE_FILE})
+else()
+  message(FATAL_ERROR
+         "Cannot build orfeo application without OTB.  Please set OTB_DIR.")
+endif()
+
 option (MAIN
     "Compile the main" OFF)
 
 option (EXAMPLES
     "Compile examples" OFF)
+
+option (ORFEO
+	   "Compile orfeo example" OFF)
 
 option (WEBSOCKET
     "Enables websocket" OFF)
@@ -142,3 +153,8 @@ if (EXAMPLES)
         endif (WEBSOCKET)
     endif (CPP_BINDING)
 endif (EXAMPLES)
+
+if (ORFEO)
+add_executable (orfeo examples/orfeo/orfeo.cpp)
+target_link_libraries (orfeo  _mongoose OTBIO)
+endif (ORFEO)
