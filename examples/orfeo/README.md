@@ -45,7 +45,7 @@ The code writing take places in the `Examples/orfeo` directory. Open the orfeo.c
 for the method 'otb' and extend your code from there implementing another Orfeo features. There is
 a plenty of examples you can find [here](http://sourceforge.net/projects/orfeo-toolbox/files/OTB/OTB-4.0/OTB-4.0.0.tgz/download)
 inside the folder 'Examples'. For example 'Examples/FeatureExtraction/ExtractRoadExample' that analyse a tif satellite image
-identifying the roads. You can find the sample data to run the example [here](http://www.orfeo-toolbox.org/packages/OTB-Data-Examples.tgz)
+identifying the roads. On the Orfeo documentation [there is a detailed explanation](http://www.orfeo-toolbox.org/SoftwareGuide/SoftwareGuidech14.html#x40-23400014.7) about how the 'road extraction' sample. You can find the sample data to run the example [here](http://www.orfeo-toolbox.org/packages/OTB-Data-Examples.tgz)
 
 # License
 
