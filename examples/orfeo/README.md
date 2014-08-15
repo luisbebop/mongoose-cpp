@@ -19,6 +19,8 @@ This sample was tested on Ubuntu Server 12.04 LTS. To install all dependencies f
 sudo apt-add-repository ppa:ubuntugis/ubuntugis-unstable
 sudo add-apt-repository ppa:otb/orfeotoolbox-nightly
 sudo apt-get install libotb3-dev
+sudo apt-get install git
+git clone https://github.com/luisbebop/mongoose-cpp.git
 ```
 
 # Building
